@@ -1,0 +1,131 @@
+/* General setup */
+
+* {
+  box-sizing: border-box;
+  font-size: 10px;
+}
+
+body {
+  margin: 0 auto;
+  min-width: 1000px;
+  max-width: 1400px;
+  font-family:'otama.epregular', serif;
+}
+
+/* Layout */
+
+section {
+  float: left;
+  width: 50%;
+}
+
+aside {
+  float: left;
+  width: 30%;
+}
+
+nav {
+  float: left;
+  width: 20%;
+}
+
+footer {
+  clear: both;
+}
+
+header, section, aside, nav, footer {
+  padding: 20px;
+}
+
+/* header and footer */
+
+header, footer {
+  border-top: 5px solid #a66;
+  border-bottom: 5px solid #a66;
+}
+
+/* WRITE YOUR CODE BELOW HERE */
+@font-face {
+  font-family: 'alegreyablack';
+  src: url('fonts/alegreya-black-webfont.woff2') format('woff2'),
+      url('fonts/alegreya-black-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'otama.epregular';
+  src: url('otama-ep-webfont.woff2') format('woff2'),
+      url('otama-ep-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+header, h1, h2 {
+  font-family: 'alegreyablack', serif;
+  font-size: 1.6em;
+  letter-spacing: 1.6px;
+}
+
+header {
+  text-align: center;
+}
+
+body {
+  line-height: 20px;
+  letter-spacing: 0.6px;
+  word-spacing: 1.2px;
+}
+
+h2 + p {
+  text-indent: 20px;
+}
+
+a:link {
+  color:#a66;
+  text-decoration:underline;
+}
+
+a:visited {
+  color:rgb(156, 42, 42);
+  text-decoration:underline;
+}
+
+a:focus {
+  color:rgb(235, 57, 57);
+  text-decoration:none;
+  outline:none;
+}
+
+a:hover {
+  color:rgb(235, 57, 57);
+  text-decoration:none;
+}
+
+a:active {
+  color:blanchedalmond;
+}
+
+a[href^="http"] {
+  background: url("external-link-52.png") no-repeat 100% 0;
+  background-size: 16px 16px;
+  padding-right: 19px;
+}
+
+li {
+  line-height: 20px;
+}
+
+nav ul li {
+  border: 1px solid #a66;
+  width: 200px;
+  height: 50px;
+  margin-top: 10px;
+  text-align: center;
+  line-height: 40px;
+}
+
+nav ul li a {
+  font-size: 3em;
+}
